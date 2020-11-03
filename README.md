@@ -6,7 +6,7 @@ The EETF (External Erlang Term Format) is a binary serialization protocol that c
 The actual `term_to_binary` implementation is a BIF (builtin function) which explains the difference in performance.
 
 ## Benchmark
-to see how horribly it performs I ran a benchmark using Benchee. 
+To see how horribly it performs I ran a benchmark using Benchee. As you can see for all types the handrolled version performs way worse than the native one (no surprises there). The only types that come _somewhat_ close are empty lists, int32 and int8
 <details>
 
 <summary>The results:</summary>
